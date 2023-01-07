@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regestration form</title>
+    <link rel="stylesheet" href="regestrationform.css"/>
+    <script>
+        function validation  (formObj) {
+            let firname =formObj.finame.value;
+			console.log(firname);
+			return false;
+          
+			
+
+        }
+
+    </script>
+</head>
+<body>
+    <form method="post" action="homepage.html" onsubmit="return validation(this)">
+        <table class="table">
+            <h1>Regestration form</h1>
+            <tr>
+                <td>first name</td>
+                <td>
+                    <input type="text" size="20" id="fname" name="finame" value="" required>
+                    <span id="fname_error" style="color:red"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>last name</td>
+                <td>
+                    <input type="text"  id="lname" name="liname" value="" required>
+                    <span id="lname_error" style="color:red"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>email</td>
+                <td><input type="text"  id="emails" name="email" value="" required>
+                    <span id="email_error" style="color:red"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>password</td>
+                <td><input type="text"  id="pass" name="passw" value="">
+                    <span id="pass_error" style="color:red"></span>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>confirm password</td>
+                <td><input type="text"  id="cpass" name="capssw" value="" required>
+                    <span id="cpass_error" style="color:red"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>country</td>
+                <td>
+                <input type="checkbox" name="nagpur"/>nagpur
+                <input type="checkbox" name="Mumbai"/>Mumbai
+                <input type="checkbox" name="Kolkata"/>Kolkata
+                <input type="checkbox" name="jaipur"/>jaipur
+                <input type="checkbox" name="varanasi"/>varanasi
+                </td>
+            </tr>
+
+            <tr>
+                <td>Gender</td>
+                <td>
+                <input type="radio" name="gender" value="male"/>male
+                <input type="radio" name="gender" value="male"/>female
+                </td>
+            </tr>
+
+
+            <tr>
+                <td></td>
+                <td><input type="reset" name="reset"/>
+                    <input type="submit" name="submit"/>
+                </td>
+            </tr>
+
+        </table>
+
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.fds{
+    height:60px;
+    width:250px;
+    color: rgb(188, 98, 98);
+}
+.table{
+    height:800px;
+    width:800px;
+    margin:0 auto;
+    border:1 solid #0ed9c4dd;
+}
